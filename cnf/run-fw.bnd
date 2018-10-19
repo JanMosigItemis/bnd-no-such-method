@@ -1,0 +1,4 @@
+-runfw: org.apache.felix.framework;version='[4.2.1,4.2.1]'
+-runpath: biz.aQute.launcher;version='[4.0,4.1)'
+-runee: JavaSE-1.8
+-runtrace: false

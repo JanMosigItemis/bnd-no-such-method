@@ -1,0 +1,24 @@
+-include: \
+    ../cnf/junit.bnd,\
+    ../cnf/run-fw.bnd
+
+-buildpath: \
+	${bundles.junit}
+
+-runbundles: \
+	${bundles.junit}
+	
+javac.source = 1.8
+javac.target = 1.8
+javac.compliance = 1.8
+
+src: src/main/java
+bin: target/classes
+target-dir=target
+-includeresource: target/classes/
+
+Bundle-Version: 1.0.0.SNAPSHOT
+
+Test-Cases: ${classes;CONCRETE;ANNOTATED;org.junit.runner.RunWith}
+
+-runproperties: key=value,
