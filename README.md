@@ -1,4 +1,4 @@
-See
+See https://github.com/bndtools/bnd/issues/2311
 
 A test project to showcase an error when running JUnit based integration tests in an OSGi container with bnd.
 
